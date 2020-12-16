@@ -39,6 +39,19 @@
         <title></title>
     </head>
     <body>
-
+        <ul>
+        <?php for ($i = 0; $i < count($matches); $i++) { ?>
+                <li>
+                    <?php
+                    echo $matches[$i]["squadra1"] . " - " .
+                    $matches[$i]["squadra2"] . " | " .
+                    $matches[$i]["puntisq1"] . " - " .
+                    $matches[$i]["puntisq2"];
+                    ?>
+                </li>
+                <?php
+            }
+        ?>
+        </ul>
     </body>
 </html>
